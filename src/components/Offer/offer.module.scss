@@ -1,0 +1,44 @@
+@import '../../styles/variables';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    margin-bottom: 8px;
+    max-width: 160px;
+    @include gradient(right);
+    border-radius: 10px 10px 10px 3px;
+    animation: load 0.5s 1 ease forwards;
+    transform: scale(0);
+
+    @keyframes load {
+        100% {
+            transform: scale(1);
+        }
+    }
+    @for $i from 7 through 8 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i}s;
+        }
+    }
+}
+
+.radio {
+    width: 12px;
+    height: 12px;
+    border: 1px solid $pale-violet;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.mins {
+    font-size: 8px;
+    color: $pale-violet;
+}
+
+.price {
+    margin-left: auto;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}

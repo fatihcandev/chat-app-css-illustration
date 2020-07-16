@@ -1,0 +1,17 @@
+@import '../../styles/variables';
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 11px;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.availability {
+    font-size: 8px;
+    color: $pale-violet;
+}

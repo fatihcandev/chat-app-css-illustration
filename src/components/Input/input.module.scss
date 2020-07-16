@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+.wrapper {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.input {
+    padding-left: 20px;
+    width: 80%;
+    font-size: 9px;
+
+    &::placeholder {
+        color: $grayish-blue;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.send {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: $very-dark-desaturated-violet;
+    border-radius: 50%;
+
+    svg {
+        color: white;
+        width: 13px;
+    }
+}

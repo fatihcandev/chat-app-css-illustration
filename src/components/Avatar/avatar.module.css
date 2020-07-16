@@ -1,0 +1,14 @@
+.avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.avatar img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=avatar.module.css.map */

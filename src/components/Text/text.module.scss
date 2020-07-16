@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+.wrapper {
+    padding: 7px;
+    margin-bottom: 8px;
+    max-width: 110px;
+    font-size: 8px;
+    line-height: 1.3;
+    animation: load 0.5s 1 ease forwards;
+    transform: scale(0);
+
+    @keyframes load {
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    &:nth-child(6) {
+        margin-top: 8px;
+    }
+
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i}s;
+        }
+    }
+}
+
+.left {
+    background-color: #ede5f4;
+    color: $moderate-violet;
+    border-radius: 10px 10px 10px 3px;
+}
+
+.right {
+    margin-left: auto;
+    background-color: white;
+    color: $desaturated-dark-violet;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 3px 10px;
+}

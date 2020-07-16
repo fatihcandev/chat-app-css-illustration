@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.wrapper {
+    padding: 10px;
+    background-color: $light-grayish-violet;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+}

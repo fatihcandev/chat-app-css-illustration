@@ -1,0 +1,34 @@
+.wrapper {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.input {
+  padding-left: 20px;
+  width: 80%;
+  font-size: 9px;
+}
+.input::placeholder {
+  color: #c6cacd;
+}
+.input:focus {
+  outline: 0;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #3e2753;
+  border-radius: 50%;
+}
+.send svg {
+  color: white;
+  width: 13px;
+}
+
+/*# sourceMappingURL=input.module.css.map */

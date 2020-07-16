@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+.wrapper h2,
+.wrapper p {
+  opacity: 0;
+  animation: fade 3s 1 ease forwards;
+  text-align: center;
+}
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper h2,
+.wrapper p {
+    text-align: left;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 38px;
+  color: #3e2753;
+  font-weight: 500;
+}
+
+.paragraph {
+  font-size: 15px;
+  color: #a39daa;
+  line-height: 1.7;
+  animation-delay: 1s;
+}
+
+/*# sourceMappingURL=textSection.module.css.map */

@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+.dark {
+    width: 510px;
+    height: 510px;
+    position: absolute;
+    top: 0;
+    left: -322px;
+    @include gradient(bottom);
+    border-radius: 0 0 255px 255px;
+    z-index: 0;
+
+    @media ($md) {
+        left: -343px;
+    }
+
+    @media ($lg) {
+        left: -295px;
+    }
+
+    @media ($xl) {
+        left: -180px;
+    }
+
+    @media ($xxl) {
+        left: -135px;
+    }
+
+    @media ($xxxl) {
+        left: -99px;
+    }
+}
+
+.light {
+    width: 510px;
+    height: 510px;
+    position: absolute;
+    display: none;
+    border-radius: 255px 255px 0 0;
+    background: #f9f4fa;
+    bottom: 0;
+    z-index: 0;
+
+    @media ($md) {
+        display: block;
+        right: -322px;
+    }
+
+    @media ($lg) {
+        right: -295px;
+    }
+
+    @media ($xl) {
+        right: -180px;
+    }
+
+    @media ($xxl) {
+        right: -135px;
+    }
+
+    @media ($xxxl) {
+        right: -99px;
+    }
+}

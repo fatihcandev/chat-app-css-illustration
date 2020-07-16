@@ -1,0 +1,26 @@
+$sm: 'min-width: 576px';
+$md: 'min-width: 768px';
+$lg: 'min-width: 1024px';
+$xl: 'min-width: 1280px';
+$xxl: 'min-width: 1366px';
+$xxxl: 'min-width: 1440px';
+
+// Text
+$pale-violet: #d89eff; // (sub-heading at the top of the app UI)
+$moderate-violet: #9241c8; // (chat on the left)
+$desaturated-dark-violet: #6e5d7e; // (chat on the right)
+$grayish-blue: #c6cacd; // (placeholder text)
+$very-dark-desaturated-violet: #3e2753; // (main heading) - (submit button background)
+$dark-grayish-violet: #a39daa; // (paragraph)
+
+// Secondary
+$light-grayish-violet: #f5f3f7; // (app background)
+$very-light-magenta: #e570ff; // (radio button outline)
+
+// Gradient
+$light-magenta: #e942ff;
+$light-violet: #8838ff;
+
+@mixin gradient($direction) {
+    background: linear-gradient(to $direction, $light-magenta, $light-violet);
+}

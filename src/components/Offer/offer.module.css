@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  margin-bottom: 8px;
+  max-width: 160px;
+  background: linear-gradient(to right, #e942ff, #8838ff);
+  border-radius: 10px 10px 10px 3px;
+  animation: load 0.5s 1 ease forwards;
+  transform: scale(0);
+}
+@keyframes load {
+  100% {
+    transform: scale(1);
+  }
+}
+.wrapper:nth-child(7) {
+  animation-delay: 7s;
+}
+.wrapper:nth-child(8) {
+  animation-delay: 8s;
+}
+
+.radio {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #d89eff;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.mins {
+  font-size: 8px;
+  color: #d89eff;
+}
+
+.price {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+
+/*# sourceMappingURL=offer.module.css.map */

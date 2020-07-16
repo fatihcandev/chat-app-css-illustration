@@ -1,0 +1,74 @@
+.dark {
+  width: 510px;
+  height: 510px;
+  position: absolute;
+  top: 0;
+  left: -322px;
+  background: linear-gradient(to bottom, #e942ff, #8838ff);
+  border-radius: 0 0 255px 255px;
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .dark {
+    left: -343px;
+  }
+}
+@media (min-width: 1024px) {
+  .dark {
+    left: -295px;
+  }
+}
+@media (min-width: 1280px) {
+  .dark {
+    left: -180px;
+  }
+}
+@media (min-width: 1366px) {
+  .dark {
+    left: -135px;
+  }
+}
+@media (min-width: 1440px) {
+  .dark {
+    left: -99px;
+  }
+}
+
+.light {
+  width: 510px;
+  height: 510px;
+  position: absolute;
+  display: none;
+  border-radius: 255px 255px 0 0;
+  background: #f9f4fa;
+  bottom: 0;
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .light {
+    display: block;
+    right: -322px;
+  }
+}
+@media (min-width: 1024px) {
+  .light {
+    right: -295px;
+  }
+}
+@media (min-width: 1280px) {
+  .light {
+    right: -180px;
+  }
+}
+@media (min-width: 1366px) {
+  .light {
+    right: -135px;
+  }
+}
+@media (min-width: 1440px) {
+  .light {
+    right: -99px;
+  }
+}
+
+/*# sourceMappingURL=curvedShape.module.css.map */
